@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="form">
+        <span class="header">Account</span>
+        <form class="form" [formGroup]="createAccount" (ngSubmit)="onAccFormSubmit()">
+            <label class="form-label">Name:</label>
+            <input class="form-control" type="text" formControlName="accHolderName" required>
+            <label class="form-label">Email:</label>
+            <input class="form-control" type="email" formControlName="userEmail" required>
+            <label class="form-label">resAddress:</label>
+            <input class="form-control" type="text" formControlName="resAddress" required>
+            <label class="form-label">branchAddress:</label>
+            <input class="form-control" type="text" formControlName="branchAddress" required>
+            <label class="form-label">AccOpenDate:</label>
+
+            <input class="form-control" type="date" formControlName="openDate">
+            <label class="form-label">mobile:</label>
+            <input class="form-control" type="number" formControlName="mobile">
+            <label class="form-label">dob:</label>
+            <input class="form-control" type="date" formControlName="dob">
+            <label class="form-label">userid:</label>
+            <input class="form-control" type="number" formControlName="userid">
+            <button class="btn-login" type="submit">Create Account</button>
+        </form>
+
+    </div>
+</div>

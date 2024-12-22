@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="form">
+        <span class="header">Transaction</span>
+        <form class="form" [formGroup]="addTrxn" (ngSubmit)="onTrxnFormSubmit()">
+
+            <!-- // transId:number;
+    // Date:string;
+    // remark:string;
+    // transAmt:number;
+    // tnxType:string; -->
+            <label class="form-label">TxnDate:</label>
+            <input class="form-control" type="date" formControlName="Date" required>
+            <label class="form-label">transAmt:</label>
+            <input class="form-control" type="number" formControlName="transAmt" required>
+            <label class="form-label">txnType:</label>
+            <input class="form-control" type="text" formControlName="txnType" required>
+            <label class="form-label">remark:</label>
+            <input class="form-control" type="text" formControlName>
+            <button class="btn-login" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
